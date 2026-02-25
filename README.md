@@ -1,20 +1,20 @@
-Parte A — Análise Comparativa
+📃 Parte A — Análise Comparativa
 
 Ao comparar as classes Heroi e Monstro, foi possível perceber que ambas possuem diversos atributos e métodos em comum, como:
 
-nome
+- nome
 
-vida
+- vida
 
-ataque
+- ataque
 
-defesa
+- defesa
 
-atacar()
+- atacar()
 
-receberDano()
+- receberDano()
 
-estaVivo()
+- estaVivo()
 
 Esses atributos e métodos representam características básicas de qualquer personagem do jogo, independentemente de ser herói ou monstro. Por isso, faz sentido movê-los para uma classe separada chamada Personagem, evitando assim a repetição de código.
 
@@ -34,17 +34,17 @@ Se Heroi estende Personagem (ou seja, Heroi herda de Personagem), quais linhas d
 Resposta:
 Os seguintes atributos e métodos já estariam definidos na classe Personagem, portanto não precisariam ser duplicados em Heroi:
 
-private String nome;
+- private String nome;
 
-private int ataque;
+- private int ataque;
 
-private int defesa;
+- private int defesa;
 
-public int atacar()
+- public int atacar()
 
-public void receberDano(int dano)
+- public void receberDano(int dano)
 
-public boolean estaVivo()
+- public boolean estaVivo()
 
 Pergunta 2:
 Qual é a vantagem de ter o método receberDano() definido em um único lugar (Personagem) em vez de duplicado em Heroi e Monstro? Dê um exemplo de situação onde a duplicação poderia causar problemas.
